@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+              android:orientation="vertical" 
+              android:layout_width="match_parent" 
+              android:layout_height="match_parent" android:background="#6500b1"> 
+ 
+    <TextView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:text="Sort:" 
+            android:id="@+id/textView11"/> 
+    <Spinner 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/spinner5" android:prompt="@string/Sort" android:entries="@array/Sort"/> 
+    <ScrollView 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/scrollView3"> 
+        <RelativeLayout 
+                android:layout_width="match_parent" 
+                android:layout_height="match_parent"> 
+            <ImageView 
+                    android:layout_width="160dp" 
+                    android:layout_height="240dp" 
+                    android:id="@+id/imageView" 
+                    android:contentDescription="pic" android:src="@drawable/angel" android:layout_alignParentTop="true" 
+                    android:layout_alignParentStart="true"/> 
+            <ImageView 
+                    android:layout_width="160dp" 
+                    android:layout_height="240dp" 
+                    android:id="@+id/imageView2" 
+                    android:src="@drawable/bishop" 
+                    android:layout_alignParentTop="true" android:layout_alignParentEnd="true" 
+                    android:layout_alignBottom="@+id/imageView"/> 
+            <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:text="Angel" 
+                    android:id="@+id/textView18" android:layout_below="@+id/imageView" 
+                    android:layout_alignParentStart="true"/> 
+            <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:text="Bishop" 
+                    android:id="@+id/textView19" 
+                    android:layout_below="@+id/imageView2" android:layout_alignStart="@+id/imageView2"/> 
+            <ImageView 
+                    android:layout_width="160dp" 
+                    android:layout_height="240dp" 
+                    android:id="@+id/imageView3" 
+                    android:src="@drawable/black" 
+                    android:layout_below="@+id/textView18" android:layout_alignParentStart="true" 
+                    android:layout_marginTop="40dp"/> 
+            <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:text="Black Widow" 
+                    android:id="@+id/textView20" 
+                    android:layout_below="@+id/imageView3"/> 
+            <ImageView 
+                    android:layout_width="160dp" 
+                    android:layout_height="240dp" 
+                    android:id="@+id/imageView4" 
+                    android:src="@drawable/blade" android:layout_alignTop="@+id/imageView3" 
+                    android:layout_alignEnd="@+id/imageView2"/> 
+            <TextView 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="wrap_content" 
+                    android:textAppearance="?android:attr/textAppearanceLarge" 
+                    android:text="Blade" 
+                    android:id="@+id/textView21" 
+                    android:layout_below="@+id/imageView4" android:layout_alignStart="@+id/imageView4"/> 
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Back" 
+                    android:id="@+id/buttonBack" android:background="#000000" android:textColor="#ffffff" 
+                    android:layout_row="27" android:layout_column="0" 
+                    android:layout_marginBottom="59dp" android:layout_alignParentBottom="true" 
+                    android:layout_centerHorizontal="true" android:layout_gravity="center_horizontal" 
+                    android:layout_below="@+id/imageView4"/> 
+        </RelativeLayout> 
+    </ScrollView> 
+</LinearLayout>
